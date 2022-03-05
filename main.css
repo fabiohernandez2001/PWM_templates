@@ -1,0 +1,316 @@
+/*
+    CLASES CORTAS
+*/
+
+body {
+    background-image: linear-gradient(45deg, #4ca8fd, #0b4e8b);
+    font-family: arial;
+}
+
+.derecha {
+    float:right;
+}
+
+.abajo {
+    bottom: 5%;
+}
+
+.rellenar {
+    margin: 5% 10% 0 10%;
+    font-size: large;
+}
+
+.texto-rellenar {
+    background: #D3D3D3;
+    padding:2%;
+    width:90%;
+}
+
+.photo {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/*
+    FONDOS
+*/
+
+.fondo-acceso {
+    width: 40%;
+    height: 90%;
+    position: absolute;
+    left: 30%;
+    top: 5%;
+    border-radius: 15px;
+    background: #fff;
+}
+
+.fondo-edit-admin {
+    width: 90%;
+    height: 90%;
+    left: 5%;
+    top: 5%;
+    background: #fff;
+}
+
+.fondo-dos-tercios {
+    position:absolute;
+    background: #fff;
+    width: 67%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    text-align: center;
+}
+
+.fondo-un-tercio {
+    position:absolute;
+    background: #c4c4c4;
+    width: 33%;
+    height: 100%;
+    left: 67%;
+    top: 0%;
+    text-align: center;
+
+}
+
+/*
+    PARA TEXTO
+*/
+
+.texto-grande {
+    width: 80%;
+    height: 60%;
+    border-radius: 10px;
+    font-family: arial;
+    font-size: medium;
+}
+
+.texto-enorme {
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    font-family: arial;
+    font-size: medium;
+    margin: 10% 10%;
+}
+
+.buen-texto {
+    font-size: large;
+}
+
+.cursiva {
+    font-style:italic;
+}
+
+/*
+    SEPARACIONES DE CONTENIDO
+*/
+
+.leftcontent {
+    position: absolute;
+    left:4%;
+    width:20%;
+    height:90%;
+    top:50px;
+    background:#fff;
+    border-radius: 0px 0px 15px 0px;
+}
+
+.centerleft {
+    position: absolute;
+    left:28%;
+    width:20%;
+    height:90%;
+    top:50px;
+    background:#fff;
+    border-radius: 0px 0px 15px 0px;
+}
+
+.centerright {
+    position: absolute;
+    left:52%;
+    width:20%;
+    height:90%;
+    top:50px;
+    background:#fff;
+    border-radius: 0px 0px 15px 0px;
+}
+
+.rightcontent {
+    position: absolute;
+    left:76%;
+    width:20%;
+    height:90%;
+    top:50px;
+    background:#fff;
+    border-radius: 0px 0px 15px 0px;
+}
+
+.mitad-izquierda {
+    position: absolute;
+    left: 5%;
+    margin: auto auto;
+    width: 40%;
+    height: 100%;
+    background: #D3D3D3;
+    border-radius: 25px;
+}
+
+.mitad-derecha {
+    position: absolute;
+    left: 55%;
+    margin: auto auto;
+    width: 40%;
+    height: 100%;
+    background: #D3D3D3;
+    border-radius: 25px;
+}
+
+.caja-edit-admin {
+    background: #696969;
+    border-radius: 50px;
+    height: 75%;
+    width: 75%;
+    margin: 5% auto;
+    bottom: 5%;
+}
+
+.caja-texto-edit-admin {
+    background: #696969;
+    border-radius: 0 0 50px 50px;
+    line-height: 3em;
+    height: 50%;
+    margin: 0% auto;
+    text-align: center;
+    font-size: large;
+}
+
+.titulo-edit-admin {
+    background: #696969;
+    border-radius: 50px;
+    height: 5%;
+    width: 60%;
+    margin: 5% auto 0 auto;
+    font-size: 140%;
+    text-align: center;
+    line-height: 150%;
+}
+
+.centro-edit {
+    position:absolute;
+    left: 46%;
+}
+
+.mes {
+    margin: 3%;
+}
+
+.calendario {
+    display: grid;
+    grid-template-colums: auto auto auto auto auto auto auto;
+}
+
+/*
+    BOTONES
+*/
+
+.boton-completo {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.boton-ver-mas {
+    position: absolute;
+    background: #e3fd46;
+    width: 25%;
+    height: 5%;
+    text-align: center;
+    right: 0;
+    bottom: 0;
+    border-radius: 15px;
+    font-size: 100%;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+/*
+    TABLAS
+*/
+
+.grid-container {
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    width: inherit;
+    height: 67%;
+}
+
+.grid-item {
+    font-size: 110%;
+    font-weight: bold;
+    text-align: center;
+    background: #e7eef8;
+    color: #0E78D9;
+}
+
+/*
+    PRECIOS
+*/
+
+.combobox-boton-precio {
+    width: 50%;
+    height: 10%;
+    margin: 15% auto;
+    font-size: large;
+    display: block;
+}
+
+.selecciones-precios {
+    position:absolute;
+    background: #D3D3D3;
+    width: 35%;
+    height: 67%;
+    left: 10%;
+    top: 17%;
+    border-radius: 15px;
+}
+
+.total-precios {
+    position:absolute;
+    background: #D3D3D3;
+    width: 35%;
+    height: 67%;
+    left: 50%;
+    top: 17%;
+    border-radius: 15px;
+}
+
+.cuadro-blanco-total {
+    background: #fff;
+    height: 80%;
+    width: 80%;
+    margin: 10% auto;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.separador {
+    border: 1px solid black;
+}
