@@ -1,0 +1,93 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 02-mar-2022, 22:40:07
+    Author     : fabio
+*/
+body{
+    background-image: linear-gradient(90deg, #4CA8FD, #0B4E8B);
+}
+input.navegador{
+    border-radius:10px 0 0 10px;
+    top:1%;
+    width:75%;
+    position:relative
+}
+div.figura{
+    top:2%;
+    padding:10px;
+    background:#fff;
+    width:23%;
+    position:absolute;
+    height:90%;
+    left:4%;
+}
+input.filtrar{
+    position:relative;
+    background: red;
+    top:1%;
+    width:16%;
+    border-radius:0 10px 10px 0;
+
+}
+.photo{
+    top:2%;
+    position: absolute;
+    z-index:0;
+    left:27.1em;
+    width:70%;
+    height:41.9em;
+    object-fit: fill;
+}
+.overlay{
+    position: absolute;
+    z-index:1;
+    top:3.4em;
+    left: 21.8em;
+    background:#E5E5E5;
+    width:20%;
+    height:50%;
+    padding:5px;
+}
+.filtrosact{
+    position:relative;
+    background: #c4c4c4;
+    text-align: center;
+    height: 10%;
+    width:100%;
+}
+.seleccion{
+    position:relative;
+    background: #c4c4c4;
+    height: 10%;
+    margin-left: 5%;
+    top:2%;
+    width:90%;
+}
+.btn{
+    background: #c4c4c4;
+    height:100%;
+    width:10%;
+    position: relative;
+    left:7.5em;
+}
+.filtrosdisp{
+    position:relative;
+    background: #c4c4c4;
+    top:5%;
+    height:60%;
+    width:100%;
+}
+.addfilter{
+    position:relative;
+    left:40%;
+    top:12%;
+}
+.delfilter{
+    position:relative;
+    left:40%;
+    top:12%;
+}
