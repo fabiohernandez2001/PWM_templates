@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Información restaurante</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            body{
+                background: #4CA8FD;
+            }
+            header{
+                position: fixed;
+                z-index: 2;
+                top: 0;
+                left:0;
+                right:0;
+                height: 5.5em;
+                background-color: grey;
+            }
+            nav#navegador{
+                margin-top: 2em;
+            }
+            a#title{
+                margin-left: 25%;
+            }
+            div#options{
+                margin-top: 0.75em;
+                float: right;
+                margin-right: 25%;
+            }
+            a#map{
+                margin-right: 1.25em;
+            }
+            a#plan{
+                margin-right: 1.25em;
+            }
+            .button {
+                text-decoration:none;
+                font-weight: 600;
+                font-size: 20px;
+                color:#333333;
+                background-color:#4CA8FD;
+                border-color: #d8d8d8;
+                border-width: 3px;
+                border-style: solid;
+                border-radius:35px;
+            }
+            
+            article{
+                background: #FFFFFF;
+                margin-top:7em;
+                margin-right:10%;
+                margin-left:10%;
+            }
+            
+            footer{}
+            #pie ul{
+                list-style-type: none;
+                text-align: center;
+            }
+            #pie li{
+                display:inline;
+                text-align: center;
+                margin: 0 10px 0 0;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav id="navegador">
+                    <a href="#" id="title"><img src="#" id="title"></a>
+                    <div id="options">
+                        <a href="#" id="plan" class="button">Enlace 1</a>
+                        <a href="#" id="map" class="button">Enlace 2</a>
+                        <a href="#" id="login" class="button">Enlace 3</a>
+                    </div>
+            </nav>
+        </header>
+        <article>
+            <h1>Nombre del restaurante</h1>
+            <img src="#"> 
+            <section id="s1">
+                Información acerca del restaurante.     
+            </section>
+            <section id="s2">
+                Información de los horarios. 
+                <form action="null">
+                    Correo Electrónico:  <input type="email" required> <br>
+                    Número de teléfono:  <input type="tel" required> <br>
+                    Fecha: <input type="date" required> <br>
+                    <input type="submit" value="Hacer reserva">
+                </form>
+            </section>
+        </article>
+        <footer id="pie">
+            <ul>
+                <li>Corporate Information</li>
+                <li><a href="#">Enlace 1</a></li>
+                <li><a href="#">Enlace 2</a></li>
+                <li><a href="#">Enlace 3</a></li>
+                <!-- Si hace falta, añadir mas enlaces a la lista -->
+            </ul>
+        </footer>
+    </body>
+</html>

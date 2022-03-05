@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Ligma Park</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            body{
+                background: #4CA8FD;
+            }
+            header{
+                position: fixed;
+                z-index: 2;
+                top: 0;
+                left:0;
+                right:0;
+                height: 5.5em;
+                background-color: grey;
+            }
+            nav#navegador{
+                margin-top: 2em;
+            }
+            a#title{
+                margin-left: 25%;
+            }
+            div#options{
+                margin-top: 0.75em;
+                float: right;
+                margin-right: 25%;
+            }
+            a#map{
+                margin-right: 1.25em;
+            }
+            a#plan{
+                margin-right: 1.25em;
+            }
+            .button {
+                text-decoration:none;
+                font-weight: 600;
+                font-size: 20px;
+                color:#333333;
+                background-color:#FFD27D;
+                border-color: #d8d8d8;
+                border-width: 3px;
+                border-style: solid;
+                border-radius:35px;
+            }
+            
+            article{
+                background: #FFFFFF;
+                margin-top:7em;
+                margin-right:10%;
+                margin-left:10%;
+            }
+            .container{
+                position: relative;
+                width: 100%;
+                height: 100%;
+            }
+            
+            .container img{
+                width: 100%;
+                height: 100%;
+            }
+            
+            .container p{
+                color: white;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%); 
+            }
+            
+            footer{}
+            #pie ul{
+                list-style-type: none;
+                text-align: center;
+            }
+            #pie li{
+                display:inline;
+                text-align: center;
+                margin: 0 10px 0 0;
+            }            
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav id="navegador">
+                    <a href="#" id="title"><img src="#" id="title"></a>
+                    <div id="options">
+                        <a href="#" id="plan" class="button">Enlace 1</a>
+                        <a href="#" id="map" class="button">Enlace 2</a>
+                        <a href="#" id="login" class="button">Enlace 3</a>
+                    </div>
+            </nav>
+        </header>
+        <article>
+            <section id="s1" class="container">
+                <img src="w.jpg" id="img1">
+                <div id="texti1s1" class="text">
+                    <p>Texto para la imagen is1</p>
+                </div>
+            </section>
+            <section id="s2" class="container">
+                <img src="w.jpg" onclick="" id="img2">
+                    <p>Texto para la imagen is2
+                    <a href="#" hidden>Mapa</a></p>
+            </section> 
+            <section id="s3" class="container">
+                <img src="w.jpg" id="img3" onclick="" >
+                <div id="texti1s2" class="text">
+                    <p>Texto para la imagen is3</p>
+                    <a href="#" hidden>Reserva</a>
+                </div>
+            </section> 
+            <section id="s4" class="container">
+                <img src="w.jpg" id="is4" onclick="" >
+                <div id="texti1s2" class="text">
+                    <p>Texto para la imagen is4</p>
+                    <a href="#" hidden>Danos tu opinión</a>
+                </div>
+            </section> 
+            <section id="s5" class="container">
+                <img src="w.jpg" id="is5" onclick="" >
+                <div id="texti1s2" class="text">
+                    <p>Texto para la imagen is5</p>
+                    <a href="#" hidden>Nuestra historia</a>
+                </div>
+            </section> 
+        </article>
+        <footer id="pie">
+            <ul>
+                <li>Corporate Information</li>
+                <li><a href="#">Enlace 1</a></li>
+                <li><a href="#">Enlace 2</a></li>
+                <li><a href="#">Enlace 3</a></li>
+                <!-- Si hace falta, añadir mas enlaces a la lista -->
+            </ul>
+        </footer>
+    </body>
+</html>

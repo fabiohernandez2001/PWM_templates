@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Compra tu entrada</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="null">
+            Selecciona el día: <input type="date" required> <br>
+            <label for="adultos">Selecciona el número de adultos:</label>
+            <select name="adultos" id="adultos" required>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select> <br>
+            <label for="niños">Selecciona el número de niños:</label>
+            <select name="niños" id="niños" required>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select> <br>
+            <input type="button" value="Calcular Precios" onclick="infoCompra()">
+            <input type="submit" value="Comprar ahora">
+        </form>
+        <article>
+            <h1>Información de la compra: </h1>
+            <h2>Número de adultos: </h2>
+            <h2>Número de niños: </h2>
+            <h3>Precio total: </h3>
+        </article>
+    </body>
+</html>
