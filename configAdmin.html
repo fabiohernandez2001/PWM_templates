@@ -10,77 +10,193 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="main.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
+    <style>
+        @media (max-width: 1000px) {
+            input#But {
+                position: fixed;
+                width: 100%;
+                height: 7%;
+                left: 0;
+                border: none;
+                background-color:orange;
+                bottom: 0;
+                font-size:16px;
+            }
+            input#Op{
+                display: block;
+            }
+            section {
+                height: 90%;
+                left: 5%;
+                top: 5%;
+                padding: 1%;
+            }
+
+            div#Reserva {
+                background: #ffffff;
+                box-shadow: 4px 4px 0;
+                border-radius: 10px;
+                height:1.5em;
+                text-align: center;
+                padding:1px;
+                font-size: 20px;
+            }
+            .mitad{
+                height: 2px;
+                border-color:black;
+                background-color:black;
+                color: black;
+                width: 90%;
+            }
+            .texto-rellenar{
+                border-radius:20px ;
+                background: #ffffff;
+                padding:2%;
+                width:80%;
+            }
+            br{display: block}
+            div#fromUbi {
+
+            }
+        }
+        @media(min-width: 1000px) and (max-width:1270px){
+            section{
+                background: #ffffff;
+                height: 90%;
+                left: 5%;
+                top: 5%;
+                padding:1%;
+            }
+            .texto-rellenar {
+                border-radius:4px;
+                background: #ffffff;
+                padding:2%;
+                width:90%;
+            }
+            hr {
+                display: block;
+            }
+            div#Ubicacion{
+                background:#696969;
+                border-radius:10px;
+                width: 50%;
+            }
+            div#Reserva{
+                background:#696969;
+                border-radius:10px;
+                width: 50%;
+            }
+            div#fromUbi{
+                background: #c4c4c4;
+                position: relative;
+                border-radius: 10px;
+                padding:2%;
+            }
+            div#fromReserv{
+                position: relative;
+                background: #c4c4c4;
+                border-radius: 10px;
+                padding:2%;
+
+            }
+            input#But {
+                width: 10%;
+                height: 7%;
+                left: 0;
+                border: none;
+                background-color:orange;
+                bottom: 0;
+                font-size:16px;
+            }
+            input#Op{
+                display: flex;
+            }
+        }
+
+
+    </style>
     <body>
-        <section class="fondo-edit-admin">
-            <article class="mitad-izquierda">
-                <div class="titulo-edit-admin">
-                    Ubicación
-                </div>
-                <div class="caja-edit-admin">
-                    <br>
-                    <div class="rellenar">
-                        Rellenar
-                        <br>
-                        <input class="texto-rellenar" type="text" name="Nombre">
+        <div class="container">
+            <section class="w-95 m-5 h-95 p-3 bg-white bg-gray-500">
+                <article class="p-2 row cols-md  justify-items-center bg-white " >
+                    <div class="bg-white bg-opacity-75 mb-3 rounded h4 w-75 text-center shadow bg-black bg-opacity-75 d-block d-md-none d-lg-none">
+                        Ubicación
                     </div>
-                    <div class="rellenar">
-                        Rellenar
-                        <br>
-                        <input class="texto-rellenar" type="text" name="Nombre">
+                    <div class="bg-black bg-opacity-75 mb-3 rounded h4 w-75 text-center d-none d-md-block ">
+                        Ubicación
                     </div>
-                    <div class="rellenar">
-                        Rellenar
-                        <br>
-                        <input class="texto-rellenar" type="text" name="Nombre">
+                    <div class="row d-inline-block justify-items-center">
+                        <div class="d-inline justify-items-center">
+                                Rellenar:
+                                <input class="bg-white p-1 mb-5 w-auto rounded" type="text" name="Nombre">
+                        </div>
+                        <div class="row-cols align-items-center">
+                            <div class="d-inline">
+                                Rellenar:
+                                <input class="bg-white p-1 mb-5 w-auto rounded" type="text" name="Nombre">
+                            </div>
+                        </div>
+                        <div class="row-cols align-items-center">
+                            <div class="d-inline">
+                                Rellenar:
+                                <input class="bg-white p-1 mb-5 w-auto rounded" type="text" name="Nombre">
+                            </div>
+                        </div>
+                        <div class="row-cols align-items-center">
+                            <div class="d-inline">
+                                Rellenar:
+                                <input class="bg-white p-1 mb-5 w-auto rounded" type="text" name="Nombre">
+                            </div>
+                        </div>
+                        <div class="row-cols align-items-center">
+                            Información adicional de la llegada:
+                            <textarea class="bg-white p-1 mb-5 w-100 rounded"></textarea>
+                        </div>
                     </div>
-                    <div class="rellenar">
-                        Rellenar
-                        <br>
-                        <input class="texto-rellenar" type="text" name="Nombre">
+                </article>
+                <hr class="mitad">
+                <article class="p-2 row cols-md  justify-content-center" >
+                    <div class="bg-white bg-md-black bg-opacity-75 mb-3 rounded h4 w-75 text-center shadow bg-black" >
+                        Reservas
                     </div>
-                    <div class="caja-texto-edit-admin">
-                        Información adicional de la llegada:
-                        <textarea class="texto-grande"></textarea>
+                    <div class="row d-inline-block bg-md-black bg-opacity-25">
+                        <div class="row-cols align-items-center">
+                            <div class="d-inline">
+                                Rellenar:
+                                <input class="bg-white p-1 mb-5 w-auto rounded" type="text" name="Nombre">
+                            </div>
+                        </div>
+                        <div class="row-cols align-items-center">
+                            <div class="d-inline">
+                                Rellenar:
+                                <input class="bg-white p-1 mb-5 w-auto rounded" type="text" name="Nombre">
+                            </div>
+                        </div>
+                        <div class="row-cols align-items-center">
+                            <div class="d-inline">
+                                Rellenar:
+                                <input class="bg-white p-1 mb-5 w-auto rounded" type="text" name="Nombre">
+                            </div>
+                        </div>
+                        <div class="row-cols align-items-center">
+                            <div class="d-inline">
+                                Rellenar:
+                                <input class="bg-white p-1 mb-5 w-auto rounded" type="text" name="Nombre">
+                            </div>
+                        </div>
+                        <div class="row-cols align-items-center">
+                            Información adicional de la llegada:
+                            <textarea class="bg-white p-1 mb-5 w-100 rounded"></textarea>
+                        </div>
                     </div>
-                </div>
-            </article>
-            <article class="mitad-derecha">
-                <div class="titulo-edit-admin">
-                    Reserva
-                </div>
-                <div class="caja-edit-admin">
-                    <br>
-                    <div class="rellenar">
-                        Rellenar
-                        <br>
-                        <input class="texto-rellenar" type="text" name="Nombre">
-                    </div>
-                    <div class="rellenar">
-                        Rellenar
-                        <br>
-                        <input class="texto-rellenar" type="text" name="Nombre">
-                    </div>
-                    <div class="rellenar">
-                        Rellenar
-                        <br>
-                        <input class="texto-rellenar" type="text" name="Nombre">
-                    </div>
-                    <div class="rellenar">
-                        Rellenar
-                        <br>
-                        <input class="texto-rellenar" type="text" name="Nombre">
-                    </div>
-                    <div class="caja-texto-edit-admin">
-                        Información adicional de las reservas:
-                        <textarea class="texto-grande"></textarea>
-                    </div>
-                </div>
-            </article>
-            <aside class="centro-edit">
-                <input type="submit" value="Opciones" name="Siguiente">
-                <input type="submit" value="Modificar" name="Siguiente">
-            </aside>
-        </section>
+                </article>
+            </section>
+            <div class="row">
+                <input id="Op" type="submit" value="Opciones" name="Siguiente" class="row cols-md-2">
+                <input id="But" type="submit" value="Modificar" name="Siguiente" class="col-md-2">
+            </div>
+        </div>
     </body>
 </html>
