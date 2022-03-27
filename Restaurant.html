@@ -1,105 +1,116 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Información restaurante</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style type="text/css">
-            body{
-                background: #4CA8FD;
-            }
-            header{
-                position: fixed;
-                z-index: 2;
-                top: 0;
-                left:0;
-                right:0;
-                height: 5.5em;
-                background-color: grey;
-            }
-            nav#navegador{
-                margin-top: 2em;
-            }
-            a#title{
-                margin-left: 25%;
-            }
-            div#options{
-                margin-top: 0.75em;
-                float: right;
-                margin-right: 25%;
-            }
-            a#map{
-                margin-right: 1.25em;
-            }
-            a#plan{
-                margin-right: 1.25em;
-            }
-            .button {
-                text-decoration:none;
-                font-weight: 600;
-                font-size: 20px;
-                color:#333333;
-                background-color:#4CA8FD;
-                border-color: #d8d8d8;
-                border-width: 3px;
-                border-style: solid;
-                border-radius:35px;
-            }
-            
-            article{
-                background: #FFFFFF;
-                margin-top:7em;
-                margin-right:10%;
-                margin-left:10%;
-            }
-            
-            footer{}
-            #pie ul{
-                list-style-type: none;
-                text-align: center;
-            }
-            #pie li{
-                display:inline;
-                text-align: center;
-                margin: 0 10px 0 0;
-            }
-        </style>
+      <title>Información restaurante</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="/webshim-1.16.0/js-webshim/minified/polyfiller.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     </head>
-    <body>
-        <header>
-            <nav id="navegador">
-                    <a href="#" id="title"><img src="#" id="title"></a>
-                    <div id="options">
-                        <a href="#" id="plan" class="button">Enlace 1</a>
-                        <a href="#" id="map" class="button">Enlace 2</a>
-                        <a href="#" id="login" class="button">Enlace 3</a>
-                    </div>
-            </nav>
-        </header>
-        <article>
-            <h1>Nombre del restaurante</h1>
-            <img src="#"> 
-            <section id="s1">
-                Información acerca del restaurante.     
-            </section>
-            <section id="s2">
-                Información de los horarios. 
-                <form action="null">
-                    Correo Electrónico:  <input type="email" required> <br>
-                    Número de teléfono:  <input type="tel" required> <br>
-                    Fecha: <input type="date" required> <br>
-                    <input type="submit" value="Hacer reserva">
-                </form>
-            </section>
-        </article>
-        <footer id="pie">
-            <ul>
-                <li>Corporate Information</li>
-                <li><a href="#">Enlace 1</a></li>
-                <li><a href="#">Enlace 2</a></li>
-                <li><a href="#">Enlace 3</a></li>
-                <!-- Si hace falta, añadir mas enlaces a la lista -->
-            </ul>
+    <style>
+      .shadow-solid {
+        box-shadow: .75em .75em #03045E;
+      }
+    </style>
+    <body class="bg-primary fst-normal">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="/img/Logo.png" alt="" width="150" height="45">
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </div>
+
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Mapa</a>
+            </div>
+
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Planifica tu visita</a>
+            </div>
+          </div>
+
+          <span class="navbar-nav">
+            <a class="btn btn-outline-success" aria-current="page" href="#">Accede</a>
+          </span>
+        </div>
+      </nav>
+
+      <article class="text-center my-3 mx-4 row p-2">
+        <h1 class="rounded-pill bg-light col-12">Nombre del restaurante</h1>
+
+        <img src="/img/Restaurant.jpg" class="col-3 d-none d-md-inline-block">
+
+        <section class="bg-white rounded-3 col-12 col-md-9 shadow-solid">
+          <b>Información acerca del restaurante</b>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+          </p>
+        </section>
+
+        <section class="bg-white rounded-3 col-12 col-md-6 text-start p-2 my-3 d-inline shadow-solid">
+          <b>Datos de reserva</b>
+
+          <form action="null">
+            Correo Electrónico:  <input type="email" required> <br>
+            Número de teléfono:  <input type="tel" required> <br>
+            Fecha: <input type="date" required> <br>
+            <input type="submit" value="Hacer reserva" class="float-end">
+          </form>
+        </section>
+
+        <section class="bg-white rounded-3 col-12 col-sm-6 col-md-5 text-start p-2 my-3 shadow-solid offset-md-1">
+          <p>
+            <b>Horarios del restaurante</b>
+          </p>
+          <input type="date"> <br>
+        </section>
+
+        <section class="d-inline-block col-12 col-sm-6 d-md-none">
+          <img src="/img/Restaurant.jpg" class="w-100 rounded-3">
+        </section>
+
+        <br class=" d-none d-sm-block d-md-none">
+        <br class=" d-none d-sm-block d-md-none">
+
+        <footer id="pie" class="bg-white rounded-3 d-none d-sm-block col-12 align-items-center my-2">
+          <br>
+          <ul>
+            <li class="d-inline text-center">Corporate Information</li>
+            <li class="d-inline text-center"><a href="#" class="plan map">Enlace 1</a></li>
+            <li class="d-inline text-center"><a href="#" class="plan map">Enlace 2</a></li>
+            <li class="d-inline text-center"><a href="#" class="plan map">Enlace 3</a></li>
+            <!-- Si hace falta, añadir mas enlaces a la lista -->
+          </ul>
         </footer>
+      </article>
     </body>
+
+    <script>
+      webshim.setOptions('forms-ext', {
+        replaceUI: 'auto',
+        types: 'date',
+        date: {
+          startView: 2,
+          inlinePicker: true,
+          classes: 'hide-inputbtns'
+        }
+      });
+      webshim.setOptions('forms', {
+        lazyCustomMessages: true
+      });
+      //start polyfilling
+      webshim.polyfill('forms forms-ext');
+    </script>
 </html>

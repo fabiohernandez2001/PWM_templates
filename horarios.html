@@ -6,52 +6,122 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>Horarios</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="main.css" rel="stylesheet">
+      <title>Horarios</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="/webshim-1.16.0/js-webshim/minified/polyfiller.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     </head>
-    <body>
-        <section class="fondo-dos-tercios">
-            <div class="mes buen-texto">
-                <i class="arrow left"></i>
+    <body class="align-items-center bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="/img/Logo.png" alt="" width="150" height="45">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </div>
+
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Mapa</a>
+          </div>
+
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Planifica tu visita</a>
+          </div>
+        </div>
+
+        <span class="navbar-nav">
+            <a class="btn btn-outline-success" aria-current="page" href="#">Accede</a>
+          </span>
+      </div>
+    </nav>
+        <div class="container w-75 rounded-3 mt-3 bg-light">
+          <div class="row text-center">
+            <section class="col-12 col-lg-8">
+              <div class="fs-3">
+                <a href="#" class="fw-bolder link-secondary"> < </a>
                 Mes del año
-                <i class="arrow right"></i>
-            </div>
-            <article class="grid-container buen-texto">
-                <input class="grid-item" type="submit" value="1">
-                <input class="grid-item" type="submit" value="2">
-                <input class="grid-item" type="submit" value="3">
-                <input class="grid-item" type="submit" value="4">
-                <input class="grid-item" type="submit" value="5">
-                <input class="grid-item" type="submit" value="6">
-                <input class="grid-item" type="submit" value="7">
-                <input class="grid-item" type="submit" value="8">
-                <input class="grid-item" type="submit" value="9">
-                <input class="grid-item" type="submit" value="10">
-                <input class="grid-item" type="submit" value="11">
-                <input class="grid-item" type="submit" value="12">
-                <input class="grid-item" type="submit" value="13">
-                <input class="grid-item" type="submit" value="14">
-                <input class="grid-item" type="submit" value="15">
-                <input class="grid-item" type="submit" value="16">
-                <input class="grid-item" type="submit" value="17">
-                <input class="grid-item" type="submit" value="18">
-                <input class="grid-item" type="submit" value="19">
-                <input class="grid-item" type="submit" value="20">
-                <input class="grid-item" type="submit" value="21">
-                <input class="grid-item" type="submit" value="22">
-                <input class="grid-item" type="submit" value="23">
-                <input class="grid-item" type="submit" value="24">
-                <input class="grid-item" type="submit" value="25">
-                <input class="grid-item" type="submit" value="26">
-                <input class="grid-item" type="submit" value="27">
-                <input class="grid-item" type="submit" value="28">
-                <input class="grid-item" type="submit" value="29">
-                <input class="grid-item" type="submit" value="30">
-                <input class="grid-item" type="submit" value="31">
-            </article>
-        </section>
-        <aside class="fondo-un-tercio"></aside>
+                <a href="#" class="fw-bolder link-secondary"> > </a>
+                <br>
+                <br>
+              </div>
+              <div>
+                <form>
+                  <div class="d-inline d-sm-inline-block text-center">
+                    <input type="date"/>
+                    <input type="submit" class="float-end"/>
+                  </div>
+                </form>
+              </div>
+              <br>
+              <br>
+              <div class="bg-light w-50 align-self-center offset-3 d-none d-md-block">
+                <h3>
+                  Leyenda
+                </h3>
+                <p>
+                  Horario ejemplo 1: Lunes a viernes 10:00-20:00
+                  <br>
+                  Horario ejemplo 2: Sábados y vísperas 10:00-00:00
+                  <br>
+                  Horario ejemplo 3: Domingos y festivos 12:00-20:00
+                  <br>
+                  Horario ejemplo 4: Vacaciones 10:00-01:00
+                </p>
+              </div>
+              <div class="d-block d-md-none">
+                <p>
+                  <select>
+                    <option selected hidden disabled>Leyenda</option>
+                    <option>Lunes a viernes 10:00-20:00</option>
+                    <option>Sábados y vísperas 10:00-00:00</option>
+                    <option>Domingos y festivos 12:00-20:00</option>
+                    <option>Vacaciones 10:00-01:00</option>
+                  </select>
+                </p>
+              </div>
+            </section>
+            <aside class="col-lg-4 bg-dark"></aside>
+          </div>
+        </div>
+
+        <footer id="pie" class="bg-white rounded-3 d-block col-10 col-sm-10 col-lg-10 offset-1 align-items-center my-2 rounded-top">
+          <br>
+          <ul>
+            <li class="d-inline text-center">Corporate Information</li>
+            <li class="d-inline text-center"><a class="plan map">Enlace 1</a></li>
+            <li class="d-inline text-center"><a class="plan map">Enlace 2</a></li>
+            <li class="d-inline text-center"><a class="plan map">Enlace 3</a></li>
+            <!-- Si hace falta, añadir mas enlaces a la lista -->
+          </ul>
+        </footer>
     </body>
+
+    <script>
+      webshim.setOptions('forms-ext', {
+        replaceUI: 'auto',
+        types: 'date',
+        date: {
+          startView: 2,
+          inlinePicker: true,
+          classes: 'hide-inputbtns'
+        }
+      });
+      webshim.setOptions('forms', {
+        lazyCustomMessages: true
+      });
+      //start polyfilling
+      webshim.polyfill('forms forms-ext');
+    </script>
+
 </html>
