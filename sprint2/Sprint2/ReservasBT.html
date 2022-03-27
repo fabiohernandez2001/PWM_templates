@@ -53,20 +53,30 @@
     </style>
 </head>
 <body style="background: #0a58ca" onload="setPic()" onresize="setPic()">
-    <iframe class="browser" src="Navegacion.html" frameborder="0"></iframe>
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="" id="logo" alt="" width="150" height="45">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </div>
+            <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="#">Mapa</a>
+            </div>
+            <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="#">Planifica tu visita</a>
             </div>
         </div>
-    </nav>
+        <span class="navbar-nav">
+                <a class="btn btn-outline-success" aria-current="page" href="#">Accede</a>
+            </span>
+    </div>
+</nav>
     <div class="container">
         <br>
         <div class="row justify-content-center">
@@ -102,7 +112,7 @@
         type: "GET",
         cache: false,
         success: function(data){
-            $("img#logo").attr("src",data[0]["imagen"]);
+            $("img#logo").attr("src",data[0]["url"]);
             for(var i=1;i<data.length;i++){
                 var title=document.getElementById(i.toString());
                 title.innerText=data[i]["Name"];
