@@ -1,0 +1,29 @@
+[
+  {
+    "imagen": "Logo.png"
+  },
+  {
+    "Name": "HORARIOS",
+    "imagen": "Precios.png",
+    "description": "Estos son los horarios",
+    "url": "Horarios.html"
+  },
+  {
+    "Name": "RESERVAS",
+    "imagen": "Precios.png",
+    "description": "Estos son las reservas",
+    "url": "Reservas.html"
+  },
+  {
+    "Name": "INFORMACION COVID",
+    "imagen": "Precios.png",
+    "description": "Mucho texto ",
+    "url": ""
+  },
+  {
+    "Name": "Precios",
+    "imagen": "Precios.png",
+    "description": "Estos son las precios",
+    "url": "Precios.html"
+  }
+]
